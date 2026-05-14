@@ -18,7 +18,48 @@ app.get('/', (req, res) => {
 
 app.get('/servicios', (req, res) => {
   res.render('servicios', {
-    titulo: 'Servicios'
+    titulo: 'Servicios',
+    servicios: [
+      {
+        nombre: 'Falso novio para cenas',
+      },
+      {
+        nombre: 'Acompañante para hacer fila',
+      },
+      {
+        nombre: 'Paseador de suegras',
+      },
+      {
+        nombre: 'Receptor de quejas vecinales',
+      },
+      {
+        nombre: 'Susurrador de plantas muertas',
+      },
+      {
+        nombre: 'Espía de neveras ajenas',
+      },
+      {
+        nombre: 'Abucheador de exparejas',
+      },
+      {
+        nombre: 'Odiador de cosas en común',
+      },
+      {
+        nombre: 'Probador profesional de siestas',
+      },
+      {
+        nombre: 'Comprobador de bombillas fundidas',
+      },
+      {
+        nombre: 'Acompañante para mirar obras',
+      },
+      {
+        nombre: 'Entrenador de piedras mascota',
+      },
+      {
+        nombre: 'Lector de términos y condiciones',
+      }
+    ]
   });
 });
 

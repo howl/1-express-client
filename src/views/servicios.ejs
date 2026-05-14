@@ -1,3 +1,9 @@
 <%- include('templates/head') %>
 
-  <%- include('templates/foot') %>
+  <% servicios.forEach(({nombre})=> { %>
+    <p>
+      <%= nombre %>
+    </p>
+    <% }) %>
+
+      <%- include('templates/foot') %>
