@@ -12,13 +12,15 @@ const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
   res.render('index', {
-    titulo: 'Portada'
+    titulo: 'Portada',
+    paginaActual: 'index'
   });
 });
 
 app.get('/servicios', (req, res) => {
   res.render('servicios', {
     titulo: 'Servicios',
+    paginaActual: 'servicios',
     servicios: [
       {
         nombre: 'Falso novio para cenas',
@@ -66,6 +68,7 @@ app.get('/servicios', (req, res) => {
 app.get('/productos', (req, res) => {
   res.render('productos', {
     titulo: 'Productos',
+    paginaActual: 'productos',
     productos: [
       {
         nombre: 'Agua de charco premium',
@@ -106,19 +109,22 @@ app.get('/productos', (req, res) => {
 
 app.get('/login', (req, res) => {
   res.render('login', {
-    titulo: 'Login'
+    titulo: 'Login',
+    paginaActual: 'login'
   });
 });
 
 app.get('/registro', (req, res) => {
   res.render('registro', {
-    titulo: 'Registro'
+    titulo: 'Registro',
+    paginaActual: 'registro'
   });
 });
 
 app.use((req, res, next) => {
   res.status(404).render('404', {
     titulo: 'error 404',
+    paginaActual: '',
     mensaje: 'Estos no son los droides que estáis buscando.',
     imagenSrc: 'assets/images/obiwan-mind-control.gif'
   })

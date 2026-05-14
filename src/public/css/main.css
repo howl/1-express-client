@@ -6,7 +6,17 @@ body {
   margin: 0;
 }
 
+h1 {
+  text-align: center;
+}
+
+main {
+  padding: 10px 30px;
+}
+
 .mainNav {
+  position: sticky;
+  top: 0;
   background-image: linear-gradient(lightgrey, grey);
   padding: 3px 16px;
 }
@@ -38,8 +48,15 @@ body {
   text-shadow: 1px 1px 2px white;
 }
 
-.mainNav>ul>li>a:hover {
-  color: white;
+.mainNav>ul>li>a:hover,
+.mainNav>ul>li>a.actual {
+  color: whitesmoke;
   text-shadow: -1px -1px 2px dimgrey;
   background-image: linear-gradient(grey, lightgrey);
+}
+
+.mainNav>ul>li>a.actual {
+  color: white;
+  text-shadow: -1px -1px 2px black;
+  border-color: dimgrey;
 }

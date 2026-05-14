@@ -1,9 +1,9 @@
 <nav class="mainNav">
   <ul>
-    <li><a href=".">Portada</a></li>
-    <li><a href="servicios">Servicios</a></li>
-    <li><a href="productos">Productos</a></li>
-    <li><a href="login">Login</a></li>
-    <li><a href="registro">Registro</a></li>
+    <li><a href="." <%=paginaActual==='index' ? 'class=actual' : '' %>>Portada</a></li>
+    <li><a href="servicios" <%=paginaActual==='servicios' ? 'class=actual' : '' %>>Servicios</a></li>
+    <li><a href="productos" <%=paginaActual==='productos' ? 'class=actual' : '' %>>Productos</a></li>
+    <li><a href="login" <%=paginaActual==='login' ? 'class=actual' : '' %>>Login</a></li>
+    <li><a href="registro" <%=paginaActual==='registro' ? 'class=actual' : '' %>>Registro</a></li>
   </ul>
 </nav>
