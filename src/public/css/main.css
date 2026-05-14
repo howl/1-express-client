@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.mainNav {
+  background-image: linear-gradient(lightgrey, grey);
+  padding: 3px 16px;
+}
+
+.mainNav>ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.mainNav>ul>li {
+  list-style-type: none;
+  border: 1px solid black;
+  border-radius: 5px 60px;
+}
+
+.mainNav>ul>li:not(:first-child) {
+  margin: 0 0 0 -4px;
+}
+
+.mainNav>ul>li>a {
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: inherit;
+  border: 1px solid white;
+  color: black;
+  text-shadow: 1px 1px 2px white;
+}
+
+.mainNav>ul>li>a:hover {
+  color: white;
+  text-shadow: -1px -1px 2px dimgrey;
+  background-image: linear-gradient(grey, lightgrey);
+}
