@@ -11,7 +11,33 @@ app.set('views', `${__dirname}/views`);
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('Y el monstruo se levanta.');
+  res.render('index', {
+    titulo: 'Portada'
+  });
+});
+
+app.get('/servicios', (req, res) => {
+  res.render('servicios', {
+    titulo: 'Servicios'
+  });
+});
+
+app.get('/productos', (req, res) => {
+  res.render('productos', {
+    titulo: 'Productos'
+  });
+});
+
+app.get('/login', (req, res) => {
+  res.render('login', {
+    titulo: 'Login'
+  });
+});
+
+app.get('/registro', (req, res) => {
+  res.render('registro', {
+    titulo: 'Registro'
+  });
 });
 
 app.listen(port, () => {
