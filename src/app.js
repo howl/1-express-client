@@ -40,6 +40,14 @@ app.get('/registro', (req, res) => {
   });
 });
 
+app.use((req, res, next) => {
+  res.status(404).render('404', {
+    titulo: 'error 404',
+    mensaje: 'Estos no son los droides que estáis buscando.',
+    imagenSrc: 'assets/images/obiwan-mind-control.gif'
+  })
+});
+
 app.listen(port, () => {
   console.log('¡¡¡El servidor está vivo!!!');
 });
