@@ -65,7 +65,42 @@ app.get('/servicios', (req, res) => {
 
 app.get('/productos', (req, res) => {
   res.render('productos', {
-    titulo: 'Productos'
+    titulo: 'Productos',
+    productos: [
+      {
+        nombre: 'Agua de charco premium',
+      },
+      {
+        nombre: 'Crema antiarrugas "Ya es tarde"',
+      },
+      {
+        nombre: 'Manta con agujeros para pies',
+      },
+      {
+        nombre: 'Piedra con bluetooth',
+      },
+      {
+        nombre: 'Reloj sin agujas',
+      },
+      {
+        nombre: 'Jabón que ensucia',
+      },
+      {
+        nombre: 'Agua en polvo',
+      },
+      {
+        nombre: 'Hielo caliente',
+      },
+      {
+        nombre: 'Flotador de plomo',
+      },
+      {
+        nombre: 'Licor de tortilla de patata',
+      },
+      {
+        nombre: 'Batido de morcilla',
+      }
+    ]
   });
 });
 

@@ -1,3 +1,9 @@
 <%- include('templates/head') %>
 
-  <%- include('templates/foot') %>
+  <% productos.forEach(({nombre})=> { %>
+    <p>
+      <%= nombre %>
+    </p>
+    <% }) %>
+
+      <%- include('templates/foot') %>
